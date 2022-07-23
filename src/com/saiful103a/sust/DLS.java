@@ -22,7 +22,7 @@ public class DLS
             System.out.println("Depth crossed, current depth "+(depth+1));
         }
     }
-    
+
     public static void main(String[] args) {
         Node A = new Node('A');
         Node B = new Node('B');
