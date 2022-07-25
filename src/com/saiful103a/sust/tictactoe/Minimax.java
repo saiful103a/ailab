@@ -133,10 +133,19 @@ public class Minimax {
         }
     }
 
-    public static void main(String[] args) {
-        Minimax randomize = new Minimax();
-        while (randomize.checkWinner()==null){
-            randomize.draw();
-        }
+    private void cleanup() {
+        try {
+            scanner.close();
+        }catch (Exception e){}
     }
+
+    public static void main(String[] args) {
+        Minimax minimax = new Minimax();
+        while (minimax.checkWinner()==null){
+            minimax.draw();
+        }
+        minimax.cleanup();
+    }
+
+
 }
